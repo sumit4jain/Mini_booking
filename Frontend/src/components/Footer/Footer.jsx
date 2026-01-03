@@ -6,15 +6,15 @@ import {AiFillGithub, AiOutlineInstagram} from 'react-icons/ai';
 
 const socialLinks = [
   {
-    path: "https://github.com/vishalkj2002",
+    path: "",
     icon: <AiFillGithub className='group-hover:text-white w-4 h-5'/>,
   },
   {
-    path: "https://www.instagram.com/mrcotch/",
+    path: "",
     icon: <AiOutlineInstagram className='group-hover:text-white w-4 h-5'/>,
   },
   {
-    path: "https://in.linkedin.com/in/vishalkj2002",
+    path: "",
     icon: <RiLinkedinFill className='group-hover:text-white w-4 h-5'/>,
   },
 ];
@@ -77,7 +77,7 @@ const Footer = () => {
         <div className="flex justify-between flex-col md:flex-row flex-wrap gap-[30px]">
           <div>
             <img src={logo} alt="" />
-            <p className='text-[16px] leading-7 font-[400] text-textColor mt-4'>Copyright ©️ {year} by Vishal Kumar Jangid all rights reserved.</p>
+            <p className='text-[16px] leading-7 font-[400] text-textColor mt-4'>Copyright ©️ {year} by SUMIT JAIN all rights reserved.</p>
             <div className='flex items-center gap-3 mt-4'>
               {socialLinks.map((link, index) => <Link to={link.path} key={index} className='w-9 h-9 border border-solid border-[#181A1E] rounded-full flex items-center justify-center group hover:bg-primaryColor hover:border-none'>{link.icon}</Link>)}
             </div>
